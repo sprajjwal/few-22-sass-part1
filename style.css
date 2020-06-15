@@ -4,6 +4,7 @@
   height: 200px;
   border: 1px solid;
   position: relative;
+  background-color: #f00;
 }
 
 /* Style all of the child divs */

@@ -1,9 +1,17 @@
+$size: 200px;
+$space: 20px;
+$color: #f00;
+$font-stack: Helvetica, Roboto, Arial;
+$border-size: 1px;
+$petals: 5;
+
 /* Container styles */
 .container {
-  width: 200px;
-  height: 200px;
+  width: $size;
+  height: $size;
   border: 1px solid;
   position: relative;
+  background-color: $color;
 }
 
 /* Style all of the child divs */
