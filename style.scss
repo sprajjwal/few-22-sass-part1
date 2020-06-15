@@ -62,23 +62,27 @@ $petals: 5;
   background-color: hsla(240, 100%, 50%, 0.21);
 }
 
+@for $i from 1 through 5 {
+  @if $i != 3 {
+    @keyframes bloom-#{$i} {
+      0% { transform: rotate(45deg); }
+    }
+  }
+  
+}
 @keyframes bloom-1 {
-  0% { transform: rotate(45deg); }
   100% { transform: rotate(-45deg); }
 }
 
 @keyframes bloom-2 {
-  0% { transform: rotate(45deg); }
   100% { transform: rotate(135deg); }
 }
 
 @keyframes bloom-4 {
-  0% { transform: rotate(45deg); }
   100% { transform: rotate(0deg); }
 }
 
 @keyframes bloom-5 {
-  0% { transform: rotate(45deg); }
   100% { transform: rotate(90deg); }
 }
 
